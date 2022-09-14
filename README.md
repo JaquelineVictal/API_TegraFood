@@ -42,8 +42,10 @@ Access: https://tegra-food-skyot.herokuapp.com/api/#/
 
 ## 🖥 Technologies
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="78" alt="javascript logo"  /> <img src="https://www.nicepng.com/png/detail/383-3839776_node-js-icon-png.png" height="60" width="78"alt="Node Js Icon Png@nicepng.com"  />
-<img src="https://google.github.io/sqlcommenter/images/sequelize-logo.png" height="60" width="78"alt="Sequelize"  /> <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" height="60" width="78"alt="MySQL"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="78" alt="javascript logo"  /> 
+<img src="https://www.nicepng.com/png/detail/383-3839776_node-js-icon-png.png" height="60" width="78"alt="Node Js Icon Png@nicepng.com"  />
+<img src="https://google.github.io/sqlcommenter/images/sequelize-logo.png" height="60" width="78"alt="Sequelize"  /> 
+<img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" height="60" width="78"alt="MySQL"  />
 
 
 <br>
