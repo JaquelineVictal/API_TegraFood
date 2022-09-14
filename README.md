@@ -45,7 +45,7 @@ Access: https://tegra-food-skyot.herokuapp.com/api/#/
 <p float="left">
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="78" alt="javascript logo"  /> 
-<img src="https://img2.gratispng.com/20180425/jrw/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e2a4242.1423638015246930701731.jpg" height="60" width="40"alt="Node Js"  />
+<img src="https://img2.gratispng.com/20180425/jrw/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e2a4242.1423638015246930701731.jpg" height="60" width="60"alt="Node Js"  />
 <img src="https://google.github.io/sqlcommenter/images/sequelize-logo.png" height="60" width="78"alt="Sequelize"  /> 
 <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" height="60" width="78"alt="MySQL"  />
 
