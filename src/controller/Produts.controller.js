@@ -12,18 +12,29 @@ const ProdutsController = {
     },
 
     GetById:  async (req, res) => {
-      //select * from department where id = "id"
-      const { id } = req.params;
-         
-      const ProdutById = await Produts.findByPk(id);
 
-      return res.status(200).json(ProdutById);
+      try {
+         //select * from department where id = "id"
+        const { id } = req.params;
+          
+        const ProdutById = await Produts.findByPk(id);
+
+        if(!ProdutById){
+          return res.status(404).json('Id não encontrado');
+        }
+
+        return res.status(200).json(ProdutById);
+        
+      } catch (error) {
+        return res.status(500).json("Algo errado aconteceu, chame o batman!");        
+      }
+     
     },
 
     FindProdusts: async (req, res) => {
 
-        //const { page, order, filter, category, max, min } = req.query;
-      
+      try {
+
         const filters  = req.query;
 
         console.log(filters)
@@ -85,26 +96,41 @@ const ProdutsController = {
             );
             return res.status(200).json(ListProduts);
         }
+        
+      } catch (error) {
+        return res.status(500).json("Algo errado aconteceu, chame o batman!");
+      }
+
+
     },
 
     CreatedProdut: async (req, res) => {
 
-      //INSERT INTO...
+      try {
+            //INSERT INTO...
 
-        const { title, price, description, image, category } = req.body;
+            const { title, price, description, image, category } = req.body;
     
-        const NewProdut = await Produts.create({
-          title, 
-          price, 
-          description, 
-          image, 
-          category 
-        });
+            const NewProdut = await Produts.create({
+              title, 
+              price, 
+              description, 
+              image, 
+              category 
+            });
+    
+            return res.status(201).json(NewProdut);
+      } catch (error) {
+        return res.status(500).json("Algo errado aconteceu, chame o batman!");
+      }
 
-        return res.status(201).json(NewProdut);
+  
     },
 
     DeletedProdut:  async (req, res) => {
+
+      try {
+
         const { id } = req.params;
            
         await Produts.destroy({
@@ -114,28 +140,42 @@ const ProdutsController = {
         });
     
         return res.sendStatus(204);
+        
+      } catch (error) {
+        return res.status(500).json("Algo errado aconteceu, chame o batman!");        
+      }
+
       },
 
       UpdateProdut:  async (req, res) => {
-        const { id } = req.params;
-        const { title, price, description, image, category } = req.body;
-    
-        const ProdutsUpdate = await Produts.update(
-          {
-            title, 
-            price, 
-            description, 
-            image, 
-            category 
-          },
-          {
-            where: {
-              id,
+
+        try {
+
+          const { id } = req.params;
+          const { title, price, description, image, category } = req.body;
+      
+          const ProdutsUpdate = await Produts.update(
+            {
+              title, 
+              price, 
+              description, 
+              image, 
+              category 
             },
-          }
-        );
-    
-        return res.status(200).json(ProdutsUpdate);
+            {
+              where: {
+                id,
+              },
+            }
+          );
+      
+          return res.status(200).json(ProdutsUpdate);
+          
+        } catch (error) {
+          return res.status(500).json("Algo errado aconteceu, chame o batman!");            
+        }
+
+
       },
     
 };
