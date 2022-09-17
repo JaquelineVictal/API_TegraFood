@@ -1,7 +1,7 @@
 const express = require("express");
 
 
-const routes = require("./routes");
+const routes = require("./src/routes");
 
 //gerando o servidor
 const server = express();
