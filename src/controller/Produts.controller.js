@@ -27,8 +27,7 @@ const ProdutsController = {
         
       } catch (error) {
         return res.status(500).json("Algo errado aconteceu, chame o batman!");        
-      }
-     
+      }     
     },
 
     FindProdusts: async (req, res) => {
@@ -100,8 +99,6 @@ const ProdutsController = {
       } catch (error) {
         return res.status(500).json("Algo errado aconteceu, chame o batman!");
       }
-
-
     },
 
     CreatedProdut: async (req, res) => {
@@ -122,9 +119,7 @@ const ProdutsController = {
             return res.status(201).json(NewProdut);
       } catch (error) {
         return res.status(500).json("Algo errado aconteceu, chame o batman!");
-      }
-
-  
+      }  
     },
 
     DeletedProdut:  async (req, res) => {
@@ -144,7 +139,6 @@ const ProdutsController = {
       } catch (error) {
         return res.status(500).json("Algo errado aconteceu, chame o batman!");        
       }
-
       },
 
       UpdateProdut:  async (req, res) => {
@@ -174,8 +168,6 @@ const ProdutsController = {
         } catch (error) {
           return res.status(500).json("Algo errado aconteceu, chame o batman!");            
         }
-
-
       },
     
 };
