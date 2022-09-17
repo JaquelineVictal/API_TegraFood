@@ -85,16 +85,6 @@ const ProdutsController = {
             );
             return res.status(200).json(ListProduts);
         }
-
-      
-        
-
-        /* Exemplo de URL 
-        https://tegra-food-skyot.herokuapp.com/products?page=1&order=ASC&filter=salgado&category=sobremesa&max=30&min=10'*/
-
-     
-        
-        
     },
 
     CreatedProdut: async (req, res) => {
@@ -123,7 +113,7 @@ const ProdutsController = {
           },
         });
     
-        return res.status(200).json("Product deleted");
+        return res.sendStatus(204);
       },
 
       UpdateProdut:  async (req, res) => {
@@ -149,4 +139,5 @@ const ProdutsController = {
       },
     
 };
+
 module.exports = ProdutsController;

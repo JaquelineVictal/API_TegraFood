@@ -1,6 +1,6 @@
 const express = require("express");
 const routes = require("./src/routes");
-const err = require("./middleware/error")
+const err = require("./src/middleware/err")
 
 //gerando o servidor
 const server = express();
